@@ -12,5 +12,6 @@ target 'HackTheRack' do
   pod 'Material'
   pod 'SCLAlertView'
   pod 'Kingfisher'
+  pod 'TCPickerView'
 
 end

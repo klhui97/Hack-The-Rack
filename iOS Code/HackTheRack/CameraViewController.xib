@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraViewController" customModule="HackTheRack" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="aTP-kT-DuW" id="Z54-tK-MkI"/>
+                <outlet property="tableView" destination="eSS-5f-9pf" id="lGi-2P-BOs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eSS-5f-9pf">
+                    <rect key="frame" x="0.0" y="210" width="375" height="457"/>
+                    <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="separatorColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aTP-kT-DuW">
+                    <rect key="frame" x="112" y="40" width="150" height="150"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="OnF-9h-r1F"/>
+                        <constraint firstAttribute="height" constant="150" id="bH5-RX-emV"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OB0-wa-Sqc">
+                    <rect key="frame" x="112" y="40" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="Js7-kj-ZYg"/>
+                        <constraint firstAttribute="width" constant="150" id="Lz9-1s-Uok"/>
+                    </constraints>
+                    <connections>
+                        <action selector="openCamera:" destination="-1" eventType="touchUpInside" id="3Ta-jN-IEe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="aTP-kT-DuW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="5Aj-2J-ATh"/>
+                <constraint firstItem="eSS-5f-9pf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7kS-6v-dJq"/>
+                <constraint firstItem="OB0-wa-Sqc" firstAttribute="centerY" secondItem="aTP-kT-DuW" secondAttribute="centerY" id="DQo-jn-kK1"/>
+                <constraint firstItem="aTP-kT-DuW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ehn-lJ-MwE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eSS-5f-9pf" secondAttribute="bottom" id="KiD-HF-BSj"/>
+                <constraint firstItem="eSS-5f-9pf" firstAttribute="top" secondItem="aTP-kT-DuW" secondAttribute="bottom" constant="20" id="Ua4-XW-4do"/>
+                <constraint firstItem="OB0-wa-Sqc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="efn-JE-dlf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eSS-5f-9pf" secondAttribute="trailing" id="wLM-Bm-WgT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

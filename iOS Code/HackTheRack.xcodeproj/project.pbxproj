@@ -31,6 +31,10 @@
 		6B332ACA20DD2EB50023337B /* ZLSwipeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B332AC620DD2EB50023337B /* ZLSwipeableView.swift */; };
 		6B332ACB20DD2EB50023337B /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B332AC720DD2EB50023337B /* Scheduler.swift */; };
 		6B332ACC20DD2EB50023337B /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B332AC820DD2EB50023337B /* Direction.swift */; };
+		6BCB059E20DE4ED3005DC069 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCB059C20DE4ED3005DC069 /* CameraViewController.swift */; };
+		6BCB059F20DE4ED3005DC069 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BCB059D20DE4ED3005DC069 /* CameraViewController.xib */; };
+		6BCB05A220DE5060005DC069 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCB05A020DE5060005DC069 /* TableViewCell.swift */; };
+		6BCB05A320DE5060005DC069 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BCB05A120DE5060005DC069 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +63,10 @@
 		6B332AC620DD2EB50023337B /* ZLSwipeableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwipeableView.swift; sourceTree = "<group>"; };
 		6B332AC720DD2EB50023337B /* Scheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
 		6B332AC820DD2EB50023337B /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		6BCB059C20DE4ED3005DC069 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		6BCB059D20DE4ED3005DC069 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		6BCB05A020DE5060005DC069 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		6BCB05A120DE5060005DC069 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		8E87D8E4CBA511DB0C88D9B2 /* Pods-HackTheRack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackTheRack.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackTheRack/Pods-HackTheRack.release.xcconfig"; sourceTree = "<group>"; };
 		9D7E8DEB04B90458E2EAF06A /* Pods_HackTheRack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackTheRack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD543FAFCB40794E842822E4 /* Pods-HackTheRack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackTheRack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackTheRack/Pods-HackTheRack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +118,10 @@
 				6B332AB920DD2E2A0023337B /* Extension */,
 				6B332AA120DD2D8C0023337B /* List */,
 				6B332AA620DD2D8C0023337B /* Map */,
+				6BCB059C20DE4ED3005DC069 /* CameraViewController.swift */,
+				6BCB059D20DE4ED3005DC069 /* CameraViewController.xib */,
+				6BCB05A020DE5060005DC069 /* TableViewCell.swift */,
+				6BCB05A120DE5060005DC069 /* TableViewCell.xib */,
 				6B332A8F20DD2BF40023337B /* AppDelegate.swift */,
 				6B332AB720DD2DB30023337B /* AppNavigationController.swift */,
 				6B332AB520DD2DAB0023337B /* TabBarViewController.swift */,
@@ -234,10 +246,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BCB059F20DE4ED3005DC069 /* CameraViewController.xib in Resources */,
 				6B332AB120DD2D8C0023337B /* MapViewController.xib in Resources */,
 				6B332A9A20DD2BF70023337B /* LaunchScreen.storyboard in Resources */,
 				6B332A9720DD2BF70023337B /* Assets.xcassets in Resources */,
 				6B332AAF20DD2D8C0023337B /* ListViewController.xib in Resources */,
+				6BCB05A320DE5060005DC069 /* TableViewCell.xib in Resources */,
 				6B332AB220DD2D8C0023337B /* CustomCallOutView.xib in Resources */,
 				6B332AAD20DD2D8C0023337B /* CardView.xib in Resources */,
 			);
@@ -276,6 +290,7 @@
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/TCPickerView/TCPickerView.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -285,6 +300,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TCPickerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +319,7 @@
 				6B332AC120DD2E2A0023337B /* UIImageView+.swift in Sources */,
 				6B332A9020DD2BF40023337B /* AppDelegate.swift in Sources */,
 				6B332AC020DD2E2A0023337B /* String+.swift in Sources */,
+				6BCB05A220DE5060005DC069 /* TableViewCell.swift in Sources */,
 				6B332AB320DD2D8C0023337B /* BorderedClusterAnnotationView.swift in Sources */,
 				6B332AAE20DD2D8C0023337B /* ListViewController.swift in Sources */,
 				6B332AB620DD2DAB0023337B /* TabBarViewController.swift in Sources */,
@@ -316,6 +333,7 @@
 				6B332AB420DD2D8C0023337B /* CustomCallOutView.swift in Sources */,
 				6B332AC920DD2EB50023337B /* ViewManager.swift in Sources */,
 				6B332AB020DD2D8C0023337B /* MapViewController.swift in Sources */,
+				6BCB059E20DE4ED3005DC069 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,10 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26Z79RZT8A;
 				INFOPLIST_FILE = HackTheRack/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KL.personal.HackTheRack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -477,10 +492,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26Z79RZT8A;
 				INFOPLIST_FILE = HackTheRack/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KL.personal.HackTheRack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
