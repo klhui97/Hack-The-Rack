@@ -1,0 +1,40 @@
+PODS:
+  - Cluster (2.2.0)
+  - Kingfisher (4.7.0)
+  - Material (2.14.0):
+    - Material/Core (= 2.14.0)
+  - Material/Core (2.14.0):
+    - Motion (~> 1.3.0)
+  - Motion (1.3.5):
+    - Motion/Core (= 1.3.5)
+  - Motion/Core (1.3.5)
+  - SCLAlertView (0.8)
+  - ViewAnimator (1.0.5)
+
+DEPENDENCIES:
+  - Cluster
+  - Kingfisher
+  - Material
+  - SCLAlertView
+  - ViewAnimator
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cluster
+    - Kingfisher
+    - Material
+    - Motion
+    - SCLAlertView
+    - ViewAnimator
+
+SPEC CHECKSUMS:
+  Cluster: b74a4f908b6e3795760afa9943fc68e9d3524092
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
+  Material: c5bea030f57d4b903c5284200bb612d571c9ec03
+  Motion: 9f74d115d7f72bb5380a8e3cde2f8a1fc898ac36
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  ViewAnimator: d87d691fbcaf994db7ee8fc632afa3073bd3b851
+
+PODFILE CHECKSUM: 27805bc10d43a6223394a97466704bf33bee66cb
+
+COCOAPODS: 1.5.3
