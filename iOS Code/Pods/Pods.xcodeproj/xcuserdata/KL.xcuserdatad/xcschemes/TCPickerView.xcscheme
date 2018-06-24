@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "057F5C0683BD7CB9D9AE00E428BD3C4C"
-               BlueprintName = "SCLAlertView"
+               BlueprintIdentifier = "A8B9E6B0F0C5865D7AA2C27E780D831D"
+               BlueprintName = "TCPickerView"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SCLAlertView.framework">
+               BuildableName = "TCPickerView.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -9,6 +9,7 @@ PODS:
     - Motion/Core (= 1.3.5)
   - Motion/Core (1.3.5)
   - SCLAlertView (0.8)
+  - TCPickerView (0.1.9)
   - ViewAnimator (1.0.5)
 
 DEPENDENCIES:
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - Kingfisher
   - Material
   - SCLAlertView
+  - TCPickerView
   - ViewAnimator
 
 SPEC REPOS:
@@ -25,6 +27,7 @@ SPEC REPOS:
     - Material
     - Motion
     - SCLAlertView
+    - TCPickerView
     - ViewAnimator
 
 SPEC CHECKSUMS:
@@ -33,8 +36,9 @@ SPEC CHECKSUMS:
   Material: c5bea030f57d4b903c5284200bb612d571c9ec03
   Motion: 9f74d115d7f72bb5380a8e3cde2f8a1fc898ac36
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  TCPickerView: 4bacd1f81121b3a12ff4624da657e3dfd1738383
   ViewAnimator: d87d691fbcaf994db7ee8fc632afa3073bd3b851
 
-PODFILE CHECKSUM: 27805bc10d43a6223394a97466704bf33bee66cb
+PODFILE CHECKSUM: 247744bec6d9b1aa75fecf79d5ce3ac74200242f
 
 COCOAPODS: 1.5.3
