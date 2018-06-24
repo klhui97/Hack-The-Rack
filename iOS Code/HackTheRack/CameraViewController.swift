@@ -35,7 +35,7 @@ class CameraViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "Table Cell")
         
-        
+        self.navigationController?.isNavigationBarHidden = true
         imageView.layer.cornerRadius = 10
         imageView.clipsToBounds = true
     }
