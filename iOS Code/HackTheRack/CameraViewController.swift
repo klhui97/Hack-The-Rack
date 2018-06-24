@@ -36,7 +36,7 @@ class CameraViewController: UIViewController {
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "Table Cell")
         
         
-        imageView.layer.cornerRadius = imageView.frame.size.width/2
+        imageView.layer.cornerRadius = 10
         imageView.clipsToBounds = true
     }
     
@@ -65,7 +65,7 @@ extension CameraViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return type.count
+        return 3
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -92,18 +92,11 @@ extension CameraViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(70)
+        return CGFloat(250)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Table Cell") as! TableViewCell
-        cell.type.text = type[indexPath.row]
-        
-        if content.count > indexPath.row{
-            cell.content.text = content[indexPath.row]
-        }else{
-            cell.content.text = " "
-        }
         
         return cell
     }

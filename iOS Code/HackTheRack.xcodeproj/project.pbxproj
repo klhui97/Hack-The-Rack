@@ -35,6 +35,10 @@
 		6BCB059F20DE4ED3005DC069 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BCB059D20DE4ED3005DC069 /* CameraViewController.xib */; };
 		6BCB05A220DE5060005DC069 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCB05A020DE5060005DC069 /* TableViewCell.swift */; };
 		6BCB05A320DE5060005DC069 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BCB05A120DE5060005DC069 /* TableViewCell.xib */; };
+		6BCB05A620DF3378005DC069 /* Screen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCB05A420DF3378005DC069 /* Screen1ViewController.swift */; };
+		6BCB05A720DF3378005DC069 /* Screen1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BCB05A520DF3378005DC069 /* Screen1ViewController.xib */; };
+		6BCB05AA20DF3396005DC069 /* Screen3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCB05A820DF3396005DC069 /* Screen3ViewController.swift */; };
+		6BCB05AB20DF3396005DC069 /* Screen3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BCB05A920DF3396005DC069 /* Screen3ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +71,10 @@
 		6BCB059D20DE4ED3005DC069 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 		6BCB05A020DE5060005DC069 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		6BCB05A120DE5060005DC069 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		6BCB05A420DF3378005DC069 /* Screen1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1ViewController.swift; sourceTree = "<group>"; };
+		6BCB05A520DF3378005DC069 /* Screen1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Screen1ViewController.xib; sourceTree = "<group>"; };
+		6BCB05A820DF3396005DC069 /* Screen3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3ViewController.swift; sourceTree = "<group>"; };
+		6BCB05A920DF3396005DC069 /* Screen3ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Screen3ViewController.xib; sourceTree = "<group>"; };
 		8E87D8E4CBA511DB0C88D9B2 /* Pods-HackTheRack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackTheRack.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackTheRack/Pods-HackTheRack.release.xcconfig"; sourceTree = "<group>"; };
 		9D7E8DEB04B90458E2EAF06A /* Pods_HackTheRack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackTheRack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD543FAFCB40794E842822E4 /* Pods-HackTheRack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackTheRack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackTheRack/Pods-HackTheRack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,8 +126,12 @@
 				6B332AB920DD2E2A0023337B /* Extension */,
 				6B332AA120DD2D8C0023337B /* List */,
 				6B332AA620DD2D8C0023337B /* Map */,
+				6BCB05A420DF3378005DC069 /* Screen1ViewController.swift */,
+				6BCB05A520DF3378005DC069 /* Screen1ViewController.xib */,
 				6BCB059C20DE4ED3005DC069 /* CameraViewController.swift */,
 				6BCB059D20DE4ED3005DC069 /* CameraViewController.xib */,
+				6BCB05A820DF3396005DC069 /* Screen3ViewController.swift */,
+				6BCB05A920DF3396005DC069 /* Screen3ViewController.xib */,
 				6BCB05A020DE5060005DC069 /* TableViewCell.swift */,
 				6BCB05A120DE5060005DC069 /* TableViewCell.xib */,
 				6B332A8F20DD2BF40023337B /* AppDelegate.swift */,
@@ -248,12 +260,14 @@
 			files = (
 				6BCB059F20DE4ED3005DC069 /* CameraViewController.xib in Resources */,
 				6B332AB120DD2D8C0023337B /* MapViewController.xib in Resources */,
+				6BCB05AB20DF3396005DC069 /* Screen3ViewController.xib in Resources */,
 				6B332A9A20DD2BF70023337B /* LaunchScreen.storyboard in Resources */,
 				6B332A9720DD2BF70023337B /* Assets.xcassets in Resources */,
 				6B332AAF20DD2D8C0023337B /* ListViewController.xib in Resources */,
 				6BCB05A320DE5060005DC069 /* TableViewCell.xib in Resources */,
 				6B332AB220DD2D8C0023337B /* CustomCallOutView.xib in Resources */,
 				6B332AAD20DD2D8C0023337B /* CardView.xib in Resources */,
+				6BCB05A720DF3378005DC069 /* Screen1ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,11 +335,13 @@
 				6B332AC020DD2E2A0023337B /* String+.swift in Sources */,
 				6BCB05A220DE5060005DC069 /* TableViewCell.swift in Sources */,
 				6B332AB320DD2D8C0023337B /* BorderedClusterAnnotationView.swift in Sources */,
+				6BCB05A620DF3378005DC069 /* Screen1ViewController.swift in Sources */,
 				6B332AAE20DD2D8C0023337B /* ListViewController.swift in Sources */,
 				6B332AB620DD2DAB0023337B /* TabBarViewController.swift in Sources */,
 				6B332ACC20DD2EB50023337B /* Direction.swift in Sources */,
 				6B332AB820DD2DB30023337B /* AppNavigationController.swift in Sources */,
 				6B332ABF20DD2E2A0023337B /* UIView+.swift in Sources */,
+				6BCB05AA20DF3396005DC069 /* Screen3ViewController.swift in Sources */,
 				6B332ACB20DD2EB50023337B /* Scheduler.swift in Sources */,
 				6B332AC220DD2E2A0023337B /* UIImage+.swift in Sources */,
 				6B332ACA20DD2EB50023337B /* ZLSwipeableView.swift in Sources */,
@@ -474,7 +490,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26Z79RZT8A;
 				INFOPLIST_FILE = HackTheRack/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = KL.personal.HackTheRack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -492,7 +511,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26Z79RZT8A;
 				INFOPLIST_FILE = HackTheRack/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = KL.personal.HackTheRack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Root View
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window!.makeKeyAndVisible()
-        self.window!.rootViewController = CameraViewController()
+        self.window!.rootViewController = TabBarViewController()
         
         return true
     }
