@@ -16,12 +16,12 @@ class CameraViewController: UIViewController {
     var content: [String] = []
     
     let cars = [
-        "Red (79.90%)",
-        "Yellow (20.05%)",
-        "Green (0.04%)",
+        "Midnight Blue (79.90%)",
+        "Black (20.05%)",
+        "White (0.04%)",
         "Blue (0.01%)",
         "Purple (0%)",
-        "While (0%)",
+        "Red (0%)",
         "Pink (0%)",
         "Black (0%)"
     ]
@@ -98,6 +98,9 @@ extension CameraViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Table Cell") as! TableViewCell
         
+        if indexPath.row == 1{
+            cell.backgroundVie.image = UIImage(named: "Group 10")
+        }
         return cell
     }
 }
